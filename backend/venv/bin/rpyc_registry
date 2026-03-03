@@ -1,0 +1,6 @@
+#!/home/ekisa/AndroidStudioProjects/AutoTrader/backend/venv/bin/python3.10
+import sys
+from rpyc.cli.rpyc_registry import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
