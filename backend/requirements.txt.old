@@ -1,8 +1,0 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-pandas==2.0.3          # Latest pandas that works with Python 3.10
-pandas-ta==0.3.14b     # Remove the '0' at the end, this version works with 3.10
-python-dotenv==1.0.0
-websockets==12.0
-numpy==1.24.3          # Compatible with pandas 2.0.3
-mt5linux==2.0.5
