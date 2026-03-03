@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.251.2.182</domain>  <!-- Your Kali IP -->
+        <domain includeSubdomains="true">10.0.2.2</domain>      <!-- For emulator -->
+        <domain includeSubdomains="true">localhost</domain>
+    </domain-config>
+
+    <!-- Debug only: allow all cleartext for development -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </debug-overrides>
+
+    <!-- Base config -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
